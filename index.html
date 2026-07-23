@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#082a57"><title>ALKÜ Konferans Destek Sistemi</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="container topbar-inner">
+<a class="brand" href="#anasayfa"><div class="brand-mark">ALKÜ</div><div><strong>Konferans Destek Sistemi</strong><span>Bilgi İşlem Daire Başkanlığı</span></div></a>
+<nav><a href="#anasayfa">Ana Sayfa</a><a href="#dosya">Dosya Gönderimi</a><a class="nav-cta" href="#talep">Teknik Talep</a></nav>
+</div></header>
+
+<main>
+<section id="anasayfa" class="hero"><div class="container hero-grid">
+<div>
+<p class="eyebrow">ALKÜ KONFERANS SALONLARI</p>
+<h1>Etkinliğiniz için teknik ihtiyaçlarınızı <span>önceden bildirin.</span></h1>
+<p class="hero-lead">Sunum, video, ses ve görsellerinizi gönderin; ihtiyaç duyduğunuz ekipmanları adetleriyle seçin.</p>
+<div class="service-icons"><div><b>🎤</b><span>Ses Sistemi</span></div><div><b>🖥️</b><span>Sunum</span></div><div><b>🎬</b><span>Görüntü</span></div><div><b>🛠️</b><span>Teknik Destek</span></div></div>
+<div class="hero-actions"><a class="btn btn-accent" href="#talep">Teknik Talep Oluştur</a><a class="btn btn-outline" href="mailto:konferans@alanya.edu.tr?subject=Etkinlik%20Dosyaları">Dosya Gönder</a></div>
+</div>
+<aside id="dosya" class="mail-panel">
+<div class="mail-icon">✉</div><small>Dosya gönderim adresi</small>
+<a class="mail-button" href="mailto:konferans@alanya.edu.tr?subject=Etkinlik%20Dosyaları">konferans@alanya.edu.tr</a>
+<p>Sunum, video, ses ve görsellerinizi uygun formatta gönderiniz.</p>
+<div class="formats"><strong>Kabul edilen dosya formatları</strong><div><span>PPTX</span><span>PDF</span><span>MP4</span><span>MP3</span><span>JPG</span><span>PNG</span></div></div>
+<div class="info-note">Dosya adında etkinlik adı ve tarih bulunması önerilir.</div>
+</aside>
+</div></section>
+
+<section class="benefits"><div class="container benefit-grid">
+<article><div>📅</div><h3>Planlı Organizasyon</h3><p>İhtiyaçlarınızı önceden bildirerek hazırlığı kolaylaştırın.</p></article>
+<article><div>🛡️</div><h3>Kesintisiz Etkinlik</h3><p>Doğru planlama ile teknik aksaklık riskini azaltın.</p></article>
+<article><div>🎧</div><h3>Uygun Destek</h3><p>İhtiyacınıza göre ekipman ve destek planlansın.</p></article>
+<article><div>✅</div><h3>Zamanında Hazırlık</h3><p>Önceden bildirilen talepler için hazırlık yapılsın.</p></article>
+</div></section>
+
+<section class="warning-strip"><div class="container warning-inner"><div class="warning-symbol">⚠</div><div>
+<strong>Önemli Bilgilendirme</strong>
+<p>Etkinlik öncesinde bildirilmeyen teknik ihtiyaçlar için destek sağlanamayabilir. Son dakika taleplerinin karşılanması mevcut ekipman ve personel durumuna bağlıdır.</p>
+</div></div></section>
+
+<section id="talep" class="form-section"><div class="container form-container">
+<div class="section-head"><p class="eyebrow">TEKNİK TALEP FORMU</p><h2>Etkinlik bilgilerinizi iletin</h2><p>Etkinlik türünü, saatleri ve ekipman adetlerini belirtin.</p></div>
+<form id="requestForm" class="request-form">
+<div class="notice">Form tamamlandığında cihazınızdaki e-posta uygulaması açılır ve bilgiler gönderilmeye hazır hale gelir.</div>
+
+<fieldset><legend>1. Etkinlik türü</legend><div class="type-grid">
+<label class="type-card"><input type="radio" name="eventType" value="Yalnızca standart sunum" required><span>📊</span><strong>Yalnızca standart sunum</strong><small>PowerPoint veya PDF, temel ses sistemi</small></label>
+<label class="type-card"><input type="radio" name="eventType" value="Sunum + video / ses"><span>🎬</span><strong>Sunum + video / ses</strong><small>Medya içeren sunum veya gösterim</small></label>
+<label class="type-card"><input type="radio" name="eventType" value="Özel teknik destek gerekiyor"><span>🛠️</span><strong>Özel teknik destek</strong><small>Standart dışı teknik ihtiyaç</small></label>
+</div></fieldset>
+
+<fieldset><legend>2. Etkinlik bilgileri</legend><div class="form-grid">
+<label>Etkinlik adı<input name="eventName" required placeholder="Örn. Akademik Açılış Töreni"></label>
+<label>Birim / Fakülte<input name="unit" required placeholder="Örn. Eğitim Fakültesi"></label>
+<label>Kurumsal e-posta<input type="email" name="requesterEmail" required placeholder="ad.soyad@alanya.edu.tr"></label>
+<label>İletişim kişisi<input name="contactName" required placeholder="Ad Soyad"></label>
+<label>Telefon<input type="tel" name="phone" required placeholder="05xx xxx xx xx"></label>
+<label>Konferans salonu<select name="hall" required><option value="">Salon seçiniz</option><option>Konferans Salonu 1</option><option>Konferans Salonu 2</option><option>Konferans Salonu 3</option><option>Diğer</option></select></label>
+<label>Tarih<input type="date" name="date" required></label>
+<label>Hazırlık saati<input type="time" name="setupTime" required></label>
+<label>Başlangıç saati<input type="time" name="startTime" required></label>
+<label>Bitiş saati<input type="time" name="endTime" required></label>
+<label>Yaklaşık katılımcı sayısı<input type="number" name="participants" min="1"></label>
+<label>Konuşmacı sayısı<input type="number" name="speakers" min="1"></label>
+</div></fieldset>
+
+<fieldset><legend>3. Teknik ihtiyaçlar ve adetler</legend><div class="equipment-list">
+<div class="equipment-row"><div><strong>El mikrofonu</strong><span>Kablosuz el mikrofonu</span></div><div class="stepper"><button type="button" class="minus">−</button><input type="number" name="El mikrofonu" value="0" min="0" max="20"><button type="button" class="plus">+</button></div></div>
+<div class="equipment-row"><div><strong>Kürsü mikrofonu</strong><span>Kürsü üzerinde sabit mikrofon</span></div><div class="stepper"><button type="button" class="minus">−</button><input type="number" name="Kürsü mikrofonu" value="0" min="0" max="10"><button type="button" class="plus">+</button></div></div>
+<div class="equipment-row"><div><strong>Yaka mikrofonu</strong><span>Kablosuz yaka mikrofonu</span></div><div class="stepper"><button type="button" class="minus">−</button><input type="number" name="Yaka mikrofonu" value="0" min="0" max="10"><button type="button" class="plus">+</button></div></div>
+<div class="equipment-row"><div><strong>Sunum kumandası</strong><span>Kablosuz sunum kontrol cihazı</span></div><div class="stepper"><button type="button" class="minus">−</button><input type="number" name="Kablosuz sunum kumandası" value="0" min="0" max="5"><button type="button" class="plus">+</button></div></div>
+</div></fieldset>
+
+<fieldset><legend>4. İçerik ve teknik ayrıntılar</legend><div class="checks">
+<label><input type="checkbox" name="options" value="PowerPoint sunumu kullanılacak"> PowerPoint sunumu</label>
+<label><input type="checkbox" name="options" value="PDF sunumu kullanılacak"> PDF sunumu</label>
+<label><input type="checkbox" name="options" value="Video gösterimi yapılacak"> Video gösterimi</label>
+<label><input type="checkbox" name="options" value="Video içerisinde ses kullanılacak"> Video içerisinde ses</label>
+<label><input type="checkbox" name="options" value="Bilgisayar sesi gerekli"> Bilgisayar sesi gerekli</label>
+<label><input type="checkbox" name="options" value="Soru-cevap bölümü olacak"> Soru-cevap bölümü</label>
+<label><input type="checkbox" name="options" value="Birden fazla konuşmacı olacak"> Birden fazla konuşmacı</label>
+<label><input type="checkbox" name="options" value="Etkinlik provası talep ediliyor"> Etkinlik provası</label>
+</div></fieldset>
+
+<label>Açıklama / Diğer ihtiyaçlar<textarea name="notes" rows="6" placeholder="Varsa özel teknik ihtiyaçlarınızı yazınız."></textarea></label>
+<div id="urgencyWarning" class="urgency-warning" hidden>Bu talep etkinliğe 24 saatten az süre kala oluşturuluyor. Teknik desteğin sağlanması garanti edilemez.</div>
+<label class="consent"><input type="checkbox" required> Teknik ihtiyaçların önceden bildirilmesi gerektiğini ve son dakika taleplerinin mevcut imkânlara bağlı olduğunu kabul ediyorum.</label>
+<button class="btn btn-submit" type="submit">Talebi E-posta Olarak Hazırla</button><p id="formMessage" class="form-message"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="container footer-inner"><div><strong>ALKÜ Konferans Destek Sistemi</strong><span>Bilgi İşlem Daire Başkanlığı</span></div><a href="mailto:konferans@alanya.edu.tr">konferans@alanya.edu.tr</a></div></footer>
+<a class="mobile-cta" href="#talep">Teknik Talep Oluştur</a>
+<script src="app.js"></script>
+</body></html>
